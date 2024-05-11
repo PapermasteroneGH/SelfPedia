@@ -2,6 +2,21 @@
 <html>
     <head>
         <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+
+            body::-webkit-scrollbar {
+            display: none;
+            
+            }
+
             #title {
                 font-family: cascadia code;
                 content: "welcome to the second-room";
@@ -11,28 +26,20 @@
             }
 
             #title:hover {
-                
-                animation-name: title-text-change;
-                animation-duration: 4s
+                font-family: Comic SANS;
+                content: "skibidi";
 
             }
 
-            @keyframes title-text-change {
-                0% {
-                    content: "welcome to the second-room"
-                }
-                100% {
-                    content: "skibidi";
-                }
-            }
+            
         </style>
     </head>
     <body>
         <div id="opening">
             <h2 id="title">welcome to the second-room</h2>
         </div>
-        <div>
-
+        <div id="the-room">
+            
         </div>
     </body>
 </html>
